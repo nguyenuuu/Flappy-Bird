@@ -1,3 +1,4 @@
+// COPYRIGHT: @@@ NGUYEN-HUU-HIEU
 class game {
     init() {
         this.canvas = document.createElement("canvas");
