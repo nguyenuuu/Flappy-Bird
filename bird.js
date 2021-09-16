@@ -39,14 +39,12 @@ class bird {
     action() {
         this.game.canvas.addEventListener("click", () => {
             this.speed = -10;
-            this.audioFlap.pause();
             this.audioFlap.currentTime = 0;
             this.audioFlap.play();
         });
-        window.addEventListener("keydown", (e) => {
+        window.addEventListener("keypress", (e) => {
             if(e.key === " ") {
                 this.speed = -10;
-                this.audioFlap.pause();
                 this.audioFlap.currentTime = 0;
                 this.audioFlap.play();
             }
