@@ -25,3 +25,22 @@ body {
     pointer-events: none;
     transition: all 0.3s ease;
 }
+#flap {
+    display: none;
+}
+@media (max-width: 500px) {
+    #flap {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 710px;
+        transform: translateX(-50%);
+        border: none;
+        outline: none;
+        padding:0.5rem 1rem;
+        color: #fff;
+        font-size: 1rem;
+        background-color: #ffd452;
+        border-radius: 5px;
+    }
+}

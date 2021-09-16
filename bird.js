@@ -49,6 +49,11 @@ class bird {
                 this.audioFlap.play();
             }
         });
+        document.getElementById("flap").addEventListener("click", () => {
+            this.speed = -10;
+            this.audioFlap.currentTime = 0;
+            this.audioFlap.play();
+        });
     }
     draw() {
         if(this.currFrame < this.game.FPS / 15)
